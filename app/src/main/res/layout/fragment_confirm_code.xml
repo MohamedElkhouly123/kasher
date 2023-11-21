@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:fillViewport="true"
+    tools:context=".view.fragment.userCycle.ConfirmCodeFragment">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/almarai_bold"
+                android:text="@string/verification_code"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15sdp" />
+
+            <ImageView
+                android:id="@+id/back_btn"
+                android:layout_width="@dimen/_27sdp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:src="@drawable/ic_back_icon"
+                android:padding="@dimen/_1sdp"
+                android:elevation="@dimen/_5sdp"
+                 />
+    </FrameLayout>
+    <ImageView
+        style="@style/view_style2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:padding="1dp" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_40sdp"
+            android:paddingEnd="@dimen/_10sdp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:elevation="@dimen/_1sdp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_otp_pic_perivy_code" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:orientation="vertical"
+                android:padding="@dimen/_8sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/almarai_bold"
+                    android:text="@string/Verification_code"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_15ssp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:text="@string/insert_code_help"
+                    android:fontFamily="@font/almarai_regular"
+                    android:textColor="@color/gray_707070"
+                    android:textSize="@dimen/_13ssp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layoutDirection="rtl"
+                android:layout_marginTop="@dimen/_12sdp">
+                <FrameLayout
+                    android:id="@+id/fragment_verification_code4_out_border_shape"
+                    style="@style/enter_check_number_base_ly"
+                    android:layout_marginStart="@dimen/_1sdp"
+                    >
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/fragment_verification_code4_etx"
+                        style="@style/EditTextConfirmCode"
+                        android:background="@drawable/base_normal"
+                        />
+                </FrameLayout>
+                <FrameLayout
+                    android:id="@+id/fragment_verification_code3_out_border_shape"
+                    style="@style/enter_check_number_base_ly"
+                    >
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/fragment_verification_code3_etx"
+                        style="@style/EditTextConfirmCode"
+                        android:background="@drawable/base_normal"
+                        />
+                </FrameLayout>
+                <FrameLayout
+                    android:id="@+id/fragment_verification_code2_out_border_shape"
+                    style="@style/enter_check_number_base_ly"
+                    >
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/fragment_verification_code2_etx"
+                        style="@style/EditTextConfirmCode"
+                        android:background="@drawable/base_normal"
+                        />
+                </FrameLayout>
+                <FrameLayout
+                    android:id="@+id/fragment_verification_code1_out_border_shape"
+                    style="@style/enter_check_number_base_ly"
+                    android:layout_marginEnd="@dimen/_1sdp"
+                    >
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/fragment_verification_code1_etx"
+                        android:enabled="true"
+                        style="@style/EditTextConfirmCode"
+                        android:background="@drawable/base_normal"
+                        />
+                </FrameLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/fragment_confirm_code_send_code_error_tv"
+                style="@style/red_style_white_light_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_18sdp"
+                android:visibility="gone"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_gravity="center_vertical"
+                android:text="@string/verification_code_error"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <!--                <Button-->
+                <!--                    android:id="@+id/fragment_verification_code_resend_the_code_btn"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:background="@drawable/no_background_buttom"-->
+                <!--                    android:text="@string/resend_the_code"-->
+                <!--                    android:paddingTop="@dimen/_4sdp"-->
+                <!--                    android:paddingBottom="@dimen/_4sdp"-->
+                <!--                    android:textAllCaps="false"-->
+                <!--                    android:visibility="gone"-->
+                <!--                    android:fontFamily="@font/bahij_thesansarabic_bold"-->
+                <!--                    android:textColor="@color/text_color"-->
+                <!--                    android:layout_marginBottom="@dimen/_8sdp"-->
+                <!--                    android:textSize="@dimen/_12ssp"-->
+                <!--                    app:backgroundTint="@null"-->
+
+                <!--                    />-->
+
+            </LinearLayout>
+            <Button
+                android:id="@+id/fragment_confirm_continue_btu"
+                style="@style/button_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_50sdp"
+                android:layout_marginBottom="@dimen/_16sdp"
+                android:background="@drawable/gradient_btn_blue_shap"
+                android:fontFamily="@font/almarai_bold"
+                android:paddingTop="@dimen/_4sdp"
+                android:paddingBottom="@dimen/_4sdp"
+                android:text="@string/continuee"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12ssp"
+                app:backgroundTint="@null" />
+            <Button
+                android:id="@+id/fragment_confirm_resend_code_btu"
+                style="@style/button_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/no_background_buttom"
+                android:fontFamily="@font/almarai_bold"
+                android:paddingTop="@dimen/_4sdp"
+                android:visibility="gone"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:paddingBottom="@dimen/_4sdp"
+                android:text="@string/resend_code"
+                app:backgroundTint="@null"
+                android:textColor="@color/app_color"
+                android:textSize="@dimen/_12ssp"
+                />
+
+                <TextView
+                    android:id="@+id/fragment_confirm_code_resend_code2_btu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginStart="@dimen/_4sdp"
+                    android:layout_marginEnd="@dimen/_4sdp"
+                    style="@style/grey_text_light12"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

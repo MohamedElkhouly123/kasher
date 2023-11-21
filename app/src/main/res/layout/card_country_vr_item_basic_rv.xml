@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_7sdp"
+        android:layout_marginEnd="@dimen/_7sdp"
+        android:layout_marginTop="@dimen/_6sdp"
+
+        >
+        <FrameLayout
+            android:id="@+id/card_country_vr_item_basic_rv_ly"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/_6sdp"
+            android:paddingBottom="@dimen/_6sdp"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:layout_marginEnd="@dimen/_6sdp"
+            >
+
+            <TextView
+                android:id="@+id/card_country_vr_item_basic_rv_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical"
+                android:fontFamily="@font/almarai_bold"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:text="مصر"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13ssp" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="end"
+                >
+                <TextView
+                    android:id="@+id/card_country_vr_item_basic_rv_code_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center_vertical"
+                    android:fontFamily="@font/almarai_bold"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="@dimen/_4sdp"
+                    android:text="+20"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_11ssp" />
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/card_country_vr_item_basic_rv_circle"
+                    android:layout_width="@dimen/_26sdp"
+                    android:layout_height="@dimen/_26sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:src="@drawable/flag_egypt"
+                    android:layout_marginBottom="@dimen/_4sdp">
+
+                </de.hdodenhof.circleimageview.CircleImageView>
+
+
+            </LinearLayout>
+        </FrameLayout>
+    </FrameLayout>
+    <ImageView
+        android:id="@+id/card_country_vr_item_basic_rv_line_img"
+        android:background="@color/grey_B3E6E6E6"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/_6sdp"
+        />
+</LinearLayout>

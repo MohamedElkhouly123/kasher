@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/change_password_bottom_sheet_close_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bottom_dialog_color"
+    android:gravity="center"
+    android:orientation="vertical"
+    app:behavior_hideable="true"
+    app:layout_behavior="@string/bottom_sheet_behavior"
+    >
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:background="@drawable/white_radius_shape"-->
+    <!--        android:orientation="vertical">-->
+    <!--    app:behavior_hideable="true"-->
+    <!--    app:layout_behavior="@string/bottom_sheet_behavior"-->
+    <!--    app:behavior_hideable="false"-->
+    <!--    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">-->
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_radius_shape"
+            android:orientation="vertical"
+            >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginBottom="@dimen/_3sdp"
+                >
+
+                <TextView
+                    android:id="@+id/buttom_sheet_recycle_list_title_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/almarai_bold"
+                    android:text="@string/categories"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_15sdp"
+                    android:textStyle="bold" />
+
+
+                <!--            <ImageView-->
+                <!--                android:layout_width="@dimen/_17sdp"-->
+                <!--                android:layout_height="@dimen/_17sdp"-->
+                <!--                android:layout_gravity="start|center"-->
+                <!--                android:layout_marginStart="@dimen/_15sdp"-->
+                <!--                android:layout_marginEnd="@dimen/_15sdp"-->
+                <!--                android:src="@drawable/ic_close_icon_buttom_sheet_icon"-->
+                <!--                 />-->
+                <ImageView
+                    android:id="@+id/buttom_sheet_recycle_list_close_image"
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_gravity="start|center"
+                    android:layout_marginStart="@dimen/_13sdp"
+                    android:layout_marginEnd="@dimen/_13sdp"
+                    android:background="@drawable/close2"
+                    />
+
+            </FrameLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/buttom_sheet_recycle_list_rv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+        </LinearLayout>
+    <!--    </LinearLayout>-->
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

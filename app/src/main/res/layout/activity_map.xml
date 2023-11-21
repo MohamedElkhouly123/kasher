@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".view.fragment.MapPages.MapFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="3">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2">
+
+
+            <fragment
+                android:id="@+id/mapNearBy"
+                android:name="com.google.android.gms.maps.MapFragment"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp"/>
+
+            <ImageView
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:elevation="@dimen/_5sdp"
+                android:src="@drawable/ic_fancymapsmarker_icon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <FrameLayout
+                android:id="@+id/add_current_location"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_gravity="bottom|end"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:background="@drawable/circle_shap_love"
+                android:elevation="@dimen/_50sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <ImageView
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_round_my_location_24px_map" />
+
+            </FrameLayout>
+            <fragment android:id="@+id/fragment_advertisement_search_Et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_100sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:gravity="start|center_vertical"
+                android:hint="@string/search_about_place_region"
+                android:fontFamily="@font/almarai_regular"
+                android:textAlignment="viewStart"
+                android:textColor="@color/gray_text_color"
+                android:textColorHint="@color/gray_999999"
+                android:textSize="@dimen/_11ssp"
+                />
+
+<!--                <AutoCompleteTextView-->
+<!--                    android:id="@+id/fragment_advertisement_search_Et"-->
+<!--                    style="@style/EditTextsearch"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="@dimen/_35sdp"-->
+<!--                    android:layout_gravity="start|center_vertical"-->
+<!--                    android:layout_marginStart="@dimen/_16sdp"-->
+<!--                    android:layout_marginTop="@dimen/_100sdp"-->
+<!--                    android:layout_marginEnd="@dimen/_16sdp"-->
+<!--                    android:background="@drawable/shapauto2"-->
+<!--                    android:drawableStart="@drawable/ic_search_icon_gray"-->
+<!--                    android:drawablePadding="@dimen/_8sdp"-->
+<!--                    android:focusableInTouchMode="true"-->
+<!--                    android:fontFamily="@font/almarai_regular"-->
+<!--                    android:gravity="start|center_vertical"-->
+<!--                    android:hint="@string/search_about_place_region"-->
+<!--                    android:textAlignment="viewStart"-->
+<!--                    android:textColor="@color/gray_text_color"-->
+<!--                    android:textColorHint="@color/gray_999999"-->
+<!--                    android:textSize="@dimen/_11ssp"-->
+<!--                    app:layout_constraintTop_toTopOf="parent" />  -->
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center_vertical"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:fontFamily="@font/almarai_bold"
+                    android:gravity="center_vertical"
+                    android:text="@string/title_name"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13ssp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_16sdp"
+                    android:background="@drawable/shape_edit_text_border"
+                    app:hintEnabled="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/fragment_map_title_name"
+                        style="@style/EditTextLogin"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_39sdp"
+                        android:background="@drawable/shape_edit_text_border"
+                        android:drawablePadding="@dimen/_8sdp"
+                        android:fontFamily="@font/almarai_regular"
+                        android:gravity="center|start"
+                        android:hint="@string/examole_home_work"
+                        android:inputType="text"
+                        android:padding="@dimen/_3ssp"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/black"
+                        android:textColorHint="#8E8E93"
+                        android:textSize="@dimen/_11ssp">
+
+                    </com.google.android.material.textfield.TextInputEditText>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_32sdp"
+                    android:layout_marginEnd="@dimen/_16sdp"
+                    android:layout_marginBottom="@dimen/_32sdp"
+                    android:background="@drawable/gradient_btn_blue_shap"
+                    android:fontFamily="@font/almarai_bold"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:text="@string/save"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_11ssp"
+                    app:backgroundTint="@null" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_90sdp"
+        android:background="#80000000">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:fontFamily="@font/almarai_bold"
+            android:text="@string/add_new_address"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15ssp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:padding="@dimen/_1sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_horizontal"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:src="@drawable/ic_back_icon_white_one"
+            android:elevation="@dimen/_5sdp" />
+    </FrameLayout>
+
+</FrameLayout>

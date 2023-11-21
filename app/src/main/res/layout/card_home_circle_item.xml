@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:orientation="vertical">
+<LinearLayout
+    android:id="@+id/category_item_card"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    >
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+<!--        <de.hdodenhof.circleimageview.CircleImageView-->
+<!--            android:id="@+id/course_reviews_card_img"-->
+<!--            android:layout_width="@dimen/_60sdp"-->
+<!--            android:layout_height="@dimen/_60sdp"-->
+<!--            android:elevation="@dimen/_3sdp"-->
+<!--            android:background="@drawable/circle_shape"-->
+<!--            android:src="@drawable/devise"-->
+<!--            />-->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/fragment_home_account_profile_photo_circularImageView"
+            android:layout_width="@dimen/_69sdp"
+            android:layout_height="@dimen/_67sdp"
+            android:src="@drawable/placeperson"
+            android:scaleType="centerCrop"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_2sdp"
+            android:elevation="@dimen/_1sdp"
+            />
+<!--        <ImageView-->
+<!--            android:layout_width="@dimen/_80sdp"-->
+<!--            android:layout_height="@dimen/_80sdp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:scaleType="fitCenter"-->
+<!--            android:background="@drawable/shap_circuler_border"-->
+<!--            />-->
+<!--        <ImageView-->
+<!--            android:id="@+id/category_item_image"-->
+<!--            android:layout_width="@dimen/_50sdp"-->
+<!--            android:layout_height="@dimen/_50sdp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:src="@drawable/category_selector"-->
+<!--            android:scaleType="fitCenter"-->
+<!--            />-->
+    </FrameLayout>
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent">
+
+    <TextView
+        android:id="@+id/category_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="@dimen/_90sdp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_marginBottom="@dimen/_4sdp"
+        android:elevation="@dimen/_100sdp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="2"
+        android:text="لابتوب 1"
+        android:textColor="@color/app_color"
+        android:textSize="@dimen/_11ssp"
+        android:fontFamily="@font/almarai_bold"
+        />
+
+</LinearLayout>
+
+
+</LinearLayout>

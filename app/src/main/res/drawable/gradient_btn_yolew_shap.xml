@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--    <padding android:top="@dimen/_3sdp"-->
+    <!--        android:left="1dp"-->
+    <!--        android:right="1dp"-->
+    <!--        android:bottom="@dimen/_3sdp"-->
+
+    <!--        />-->
+    <gradient android:angle="360" android:centerColor="@color/white"
+        android:endColor="@color/white"
+        android:startColor="@color/white"/>
+    <stroke android:width="@dimen/_1sdp"
+        android:color="@color/yolley_F0F0F0"/>
+    <corners android:radius="@dimen/_15sdp" />
+</shape>

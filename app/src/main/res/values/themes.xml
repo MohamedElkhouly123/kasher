@@ -1,0 +1,283 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.ecommerce" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/app_color</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+    </style>
+    <style name="AppTheme2" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/app_color</item>
+        <item name="colorPrimaryDark">@color/app_color</item>
+        <item name="colorAccent">@color/app_color</item>
+        <item name="android:textColor">@color/app_color</item>
+        <item name="android:statusBarColor" tools:targetApi="l">@color/white</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+<!--        <item name="android:windowLayoutInDisplayCutoutMode" tools:targetApi="o_mr1">-->
+<!--            shortEdges &lt;!&ndash; default, shortEdges, never &ndash;&gt;-->
+<!--        </item>-->
+    </style>
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/app_color</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/white</item>
+        <item name="android:textColor">@color/gray_ABABAB</item>
+        <item name="android:statusBarColor" tools:targetApi="l">@color/white</item>
+        <item name="colorControlActivated">@color/app_color</item>
+        <item name="colorControlHighlight">@color/app_color</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+    </style>
+    <style name="rating" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/black</item>
+        <item name="colorControlActivated">@color/yellow</item>
+
+
+
+    </style>
+    <style name="EditTextsearch">
+        <!--        <item name="android:fontFamily">@font/janna</item>-->
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:paddingEnd">@dimen/_10ssp</item>
+        <item name="android:paddingStart">@dimen/_10ssp</item>
+        <item name="android:textSize">@dimen/_11ssp</item>
+        <item name="android:radius">@dimen/_3ssp</item>
+        <item name="colorControlActivated">@color/white_home</item>
+    </style>
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@android:color/white</item>
+    </style>
+    <style name="view_style2">
+        <item name="background">@drawable/gradiant_navigation_shadow</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+    </style>
+
+    <style name="view_style">
+        <item name="android:background">@color/app_color</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+    </style>
+    <style name="EditTextLogin">
+        <item name="android:textColorHint">@color/green_black</item>
+        <item name="android:textColor">@color/purple_500</item>
+        <item name="android:textSize">@dimen/_11ssp</item>
+        <item name="colorControlActivated">@color/purple_500</item>
+
+    </style>
+    <style name="edit_text_grey_text_light11"  parent='ThemeOverlay.Material3.TextInputEditText'>
+        <item name="android:fontFamily">@font/almarai_regular</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:textColorHint">@color/gray_8E8E93</item>
+        <item name="android:textColor">@color/black_292929</item>
+<!--        <item name="android:editable">false</item>-->
+        <item name="android:padding">@dimen/_12sdp</item>
+        <!--        <item name="android:paddingStart">@dimen/_3ssp</item>-->
+        <!--        <item name="android:paddingEnd">@dimen/_3ssp</item>-->
+        <!--        <item name="android:paddingTop">@dimen/_3ssp</item>-->
+        <item name="colorControlActivated">@color/black_292929</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:drawablePadding">@dimen/_8sdp</item>
+        <item name="android:imeOptions">actionNext</item>
+        <item name="android:inputType">text</item>
+<!--        <item name="android:background">@drawable/gradient_item_white_shap_without_radias</item>-->
+        <item name="android:layout_height">@dimen/_39sdp</item>
+        <item name="android:layout_width">match_parent</item>
+
+    </style>
+    <style name="buttom_style3">
+        <item name="android:layout_height">@dimen/_40sdp</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="fontFamily">@font/almarai_bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/gradient_btn_yolew_shap</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textColor">@color/black_292929</item>
+    </style>
+    <style name="button_style2">
+        <item name="android:textColor">@color/app_color</item>
+        <item name="android:padding">@dimen/_8sdp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:foreground">?selectableItemBackground</item>
+    </style>
+    <style name="button_style">
+        <item name="android:textColor">@color/app_color</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:foreground">?selectableItemBackground</item>
+    </style>
+    <style name="navigation_buttom_style">
+        <item name="android:textSize">@dimen/_10ssp</item>
+        <item name="fontFamily">@font/almarai_bold</item>
+    </style>
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="view_style3">
+        <item name="android:background">#AEAEAE</item>
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">#707070</item>
+        <item name="colorControlActivated">#ED8A19</item>
+    </style>
+    <style name="view_style4">
+        <item name="android:background">@color/gray_AEAEAE</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+
+    </style>
+    <style name="view_style5">
+        <item name="android:background">#29707070</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+
+    </style>
+    <style name="view_style_light">
+        <item name="android:background">#14707070</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+
+    </style>
+    <style name="ImageSourceDialogStyle">
+        <item name="android:windowAnimationStyle">@style/ImageSourceDialogAnimStyle</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+    <style name="ImageSourceDialogStyle2">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+    <style name="ImageSourceDialogAnimStyle">
+        <item name="android:windowEnterAnimation">@anim/slide_up_anim</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_down_anim</item>
+    </style>
+    <style name="EditTextLogin2">
+        <!--        <item name="android:fontFamily">@font/janna</item>-->
+        <item name="android:textColorHint">@color/gray_707070</item>
+        <item name="android:textColor">@color/app_color</item>
+        <item name="android:paddingEnd">@dimen/_10ssp</item>
+        <item name="android:paddingStart">@dimen/_10ssp</item>
+        <item name="android:textSize">@dimen/_11ssp</item>
+        <item name="android:maxLength">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+        <!--        <item name="android:background">@drawable/edit_text_gray_shape</item>-->
+        <!--        <item name="colorControlNormal">@color/black2</item>-->
+        <!--                <item name="backgroundTint">@color/black</item>-->
+        <item name="colorControlActivated">@color/app_color</item>
+    </style>
+    <style name="Theme.ecommerce.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.Memoria.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.Memoria.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="red_style_white_light_12">
+        <item name="fontFamily">@font/almarai_light</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:textColor">@color/red_E33838</item>
+        <item name="android:lineSpacingExtra">@dimen/_4sdp</item>
+    </style>
+    ///////////////////////////////////////////
+    <style name="grey_text_light12">
+        <item name="android:fontFamily">@font/almarai_light</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:textColor">@color/gray_ABABAB</item>
+    </style>
+    <style name="black_style_light_12">
+        <item name="fontFamily">@font/almarai_light</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:textColor">@color/black_292929</item>
+    </style>
+    <style name="enter_check_number_base_ly">
+        <item name="android:layout_marginStart">@dimen/_9sdp</item>
+        <item name="android:layout_marginEnd">@dimen/_9sdp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+
+        <!--        <item name="android:layout_weight">1</item>-->
+    </style>
+    <style name="EditTextConfirmCode"  parent='ThemeOverlay.Material3.TextInputEditText'>
+<!--        <item name="android:textColorHint">@color/grey_919091</item>-->
+        <item name="android:fontFamily">@font/almarai_bold</item>
+        <item name="android:textColor">@color/black_202020</item>
+        <item name="android:textSize">@dimen/_15ssp</item>
+        <item name="android:paddingStart">@dimen/_10sdp</item>
+        <item name="android:paddingEnd">@dimen/_10sdp</item>
+        <item name="android:layout_height">@dimen/_44sdp</item>
+        <item name="android:layout_width">@dimen/_50sdp</item>
+        <item name="android:ems">10</item>
+        <item name="background">@drawable/base_normal</item>
+        <item name="android:inputType">number</item>
+        <item name="android:maxLength">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:enabled">false</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+        <item name="colorControlActivated">@color/app_color</item>
+
+<!--        android:textSize="@dimen/_15ssp"-->
+    </style>
+    ///////////////////////////////////////////
+    <style name="TextInputLayoutAutoStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/app_color</item>
+        <!--        <item name="boxBackgroundMode">none</item>-->
+<!--        <item name="colorOutline">@color/yolley_F0F0F0</item>-->
+<!--        <item name="background">@drawable/gradient_item_yello_shap</item>-->
+        <item name="boxCornerRadiusBottomEnd">@dimen/_8sdp</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/_8sdp</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/_8sdp</item>
+        <item name="boxCornerRadiusTopStart">@dimen/_8sdp</item>
+        <item name="android:layout_marginTop">@dimen/_20sdp</item>
+        <item name="android:layout_marginStart">@dimen/_15sdp</item>
+        <item name="android:layout_marginEnd">@dimen/_15sdp</item>
+
+        <!--        <item name="endIconDrawable">@drawable/arrow</item>-->
+        <!--        <item name="hintEnabled">false</item>-->
+        <!--        <item name="boxStrokeWidth">2dp</item>-->
+
+    </style>
+    ///////////////////////////////////////////
+    <style name="auto_complete_grey_text_light11">
+        <item name="android:textColor">@color/black_292929</item>
+        <item name="android:editable">false</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">false</item>
+        <item name="android:padding">@dimen/_12sdp</item>
+
+        <item name="android:textAlignment">viewStart</item>
+<!--        <item name="android:background">@drawable/gradient_item_white_shap_without_radias</item>-->
+        <!--        <item name="android:drawablePadding">@dimen/_8sdp</item>-->
+        <!--        <item name="background">@drawable/shape_edit_text_border</item>-->
+        <item name="android:layout_height">@dimen/_39sdp</item>
+        <item name="android:fontFamily">@font/almarai_regular</item>
+        <item name="android:textSize">@dimen/_11ssp</item>
+        <item name="android:textColorHint">@color/gray_8E8E93</item>
+        <!--        <item name="android:editable">false</item>-->
+        <!--        <item name="android:paddingStart">@dimen/_3ssp</item>-->
+        <!--        <item name="android:paddingEnd">@dimen/_3ssp</item>-->
+        <!--        <item name="android:paddingTop">@dimen/_3ssp</item>-->
+        <item name="colorControlActivated">@color/black</item>
+        <item name="android:drawablePadding">@dimen/_8sdp</item>
+        <item name="android:imeOptions">actionNext</item>
+        <item name="android:inputType">text</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+</resources>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/almarai_bold"
+            android:text="@string/privacy"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15sdp" />
+
+        <ImageView
+            android:id="@+id/back_btu"
+            android:layout_width="@dimen/_27sdp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_1sdp"
+            android:layout_gravity="start|center"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:src="@drawable/ic_back_icon"
+            android:elevation="@dimen/_5sdp"
+
+            />
+
+
+    </FrameLayout>
+
+    <ImageView
+        style="@style/view_style2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:padding="1dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:layout_marginTop="@dimen/_10sdp"
+
+                android:elevation="@dimen/_1sdp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_privacy_pic" />
+
+
+            <TextView
+                android:id="@+id/fragment_privacy_main_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:lineSpacingExtra="@dimen/_9sdp"
+                android:fontFamily="@font/almarai_regular"
+                android:paddingTop="@dimen/_20sdp"
+                android:paddingBottom="@dimen/_20sdp"
+                android:text="تمثل هذه الضوابط والشروط اتفاق رسمي بين المنصة والعملاء المستخدمين للمنصة والذي هو عبارة عن منصة إلكترونية تسمح للمندوبين بتقديم خدمات الشراء نيابة عن العملاء والتوصيل إلى منازلهم أو في المواقع التي يتم تحديدها مسبقاً من العملاء، حيث يقوم التطبيق بإتاحة الفرصة للعميل . لاختيار المندوب المناسب للقيام بعملية التوصيل إن أي استخدام من قبلك للخدمات التي توفرها المنصة يشكل موافقة منك على هذا العقد وأحكامه، وتبعاً لذلك يجب عليك عدم استخدام المنصة في حال لم تكن موافقاً على الأحكام والشروط الواردة في هذا .العقد تحتفظ المنصة بحق تعديل أو تغيير هذه الأحكام والشروط دون إخطار مسبق، ويكون من مسؤوليتك كمستخدم للمنصة مراجعة ضوابط وشروط الاستخدام بشكل دوري لمعرفة التحديثات التي تطرأ على الأحكام والشروط هذه، كما نأمل مراجعة سياسة الخصوصية لدينا لمعرفة المزيد حول كيفية استخدام المنصة للمعلومات .التي تقدم لنا من قبل مستخدمي المنصة أحقية الحصول على الخدمات :أنت تقر وتضمن التالي أنه لم يسبق أن تم تعطيل استخدامك لخدمات التطبيق .أو منعك من استخدامها في أي وقت من الأوقات أنك لست منافساً للمنصة ، كما أنك لا تقدم أي منتج .منافس للخدمات المقدمة من هذه المنصة أنك تتمتع بكامل القوة والسلطة للتعاقد وأنك بذلك لن تكون منتهكاً لأي قانون أو عقد، وأنه لا يوجد عليك أي سوابق قضائية أو أوامر قبض أو مطالبات لدى الجهات .الأمنية التعهدات والضمانات :أنت تقر وتضمن بأنك سوف تمتثل لكافة القوانين واللوائح المعمول بها في المملكة .العربية السعودية تقدم معلومات صحيحة ودقيقة إلى المنصة وتقوم .بتحديثها بشكل دوري تراجع وتمتثل لأي إشعارات يتم إرسالها من خلال التطبيق فيما يتعلق باستخدامكم للخدمات المقدمة من منصة .التطبيق سوف تستخدم الخدمة أو المنصة لأغراض مشروعة فقط، ولن تستخدم الخدمات لشراء أواستلام أي مواد غير .قانونية أو بهدف الاحتيال لن تستخدم الخدمة أو المنصة للتسبب بإيذاء أو مضايقة .أو إزعاج أحد ما توافق على تبادل المعلومات بين الشركات داخل المنصة .فيما يخص عملياتك المنفذة وتقييم التعاملات معك .لن تعرقل التشغيل السليم للمنصة لن تحاول إلحاق الضرر بالخدمة أو المنصة بأي شكل من .الأشكال لن تنسخ أو توزع المنصة أو المحتويات الأخرى دون .الحصول على إذن كتابي من المنصة سوف تحافظ على كلمة المرور لحسابك أو أي وسيلة تعريف نقدمها لك وتتيح الدخول إلى حسابك، بشكلٍ آمن .وسري سوف تقدم لنا كافة الدلائل التي تثبت هويتك وفقاً .لتقدير المنصة الخاص يحق للمنصة رفض تقديم الخدمة أو استخدام المنصة .دون إبداء أسباب نطاق الترخيص تمنحك المنصة ترخيص غير حصري، وغير قابل للتحويل، وغير قابل للتنازل، وغير قابل للترخيص من الباطن وغير قابل للإلغاء وذلك للحصول على خدماتنا واستخدامها فقط للغرض الشخصي (ليس لأي أغراض تجارية على :سبيل المثال لا الحصر) وفقاً لهذا العقد، لذا يجب عليك عدم إتاحة الخدمات أوتأجير، أواستئجار أوتخصيص أوإعادة بيع، أو توزيع أو ترخيص من الباطن لهذه الخدمات إلى أي .طرف ثالث عدم تعديل، أو اجتزاء، أو ترجمة، أو تلخيص، أو إنشاء عمل فرعي يقوم على فك، أو تنفيذ هندسة عكسية لتصميم المنصة أو خلاف ذلك من تحديد أو محاولة تحديد أو محاولة الوصول إلى شفرة المصدر أو التصميم الداخلي للخدمات أو أي نص، أو صور الوسائط المتعددة (صور، صوتيات، ملفات فيديو)، أو البيانات أو غيرها من المعلومات التي تقدمها المنصة أو الطرف الثالث من .مقدمي الخدمة عدم حذف، أو تغيير، أو غير ذلك من التعديل على أي حق من حقوق النشر أو غيرها من الإخطارات الرسمية الواردة .في الخدمات عدم تعمد نقل، أو توزيع الخدمات، أو السماح بتحميل .الخدمات للاستخدام بخلاف ما هو محدد هنا عدم السماح بمشاركة اسم المستخدم/ أو كلمة المرور .أو غيرها من مسوغات الوصول إلى خدمات التطبيق وكجزء من سياسة الشحن الخاصة بخدمة المنصة يحظر على المستخدمين والمندوبين شراء أو توصيل أو إرسال أو تلقي أو استلام الفئات التالية من المواد والمنتجات وما يتعلق بها، ويتوجب عليك السماح للمندوب بفتح أي .ارسالية والتأكد من سلامتها وموافقتها للشروط"
+                android:textColor="@color/black_292929"
+                android:textSize="@dimen/_12sdp">
+
+            </TextView>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "1013500589911",
+    "project_id": "store-64d2e",
+    "storage_bucket": "store-64d2e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1013500589911:android:a10a689c7ccf30c7c17012",
+        "android_client_info": {
+          "package_name": "com.shopping.ecommerceapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1013500589911-nvbl7rash9v9m8abmra9k8926m2eh245.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.shopping.ecommerceapp",
+            "certificate_hash": "ca40525644998bdba9427f26feaeff25e5494447"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqZ0rhnlhiHOQt_hIyA1a8VNxTra_n3Xc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1013500589911-ietp00hn909aflpl3kaga8tvv5m6rob0.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.codlop.Store"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/error_sub_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:visibility="gone"
+    android:paddingBottom="@dimen/_40sdp"
+    android:orientation="vertical"
+    >
+
+    <!--    <pl.droidsonroids.gif.GifImageView-->
+    <!--        android:id="@+id/error_image"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:src="@drawable/coolmonkey"-->
+    <!--        android:layout_gravity="center_horizontal"-->
+    <!--        />-->
+
+
+    <TextView
+        android:id="@+id/error_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/error_inter_net"
+        android:layout_margin="@dimen/_15sdp"
+        android:textColor="@color/error"
+        android:textSize="@dimen/_12ssp" />
+
+    <!--    <Button-->
+    <!--        android:id="@+id/error_action"-->
+    <!--        style="@style/ButtonRed"-->
+    <!--        android:layout_width="@dimen/_140sdp"-->
+    <!--        android:layout_height="@dimen/_30sdp"-->
+    <!--        android:background="@drawable/searchlight_orange"-->
+
+    <!--        android:layout_marginBottom="@dimen/_20sdp"-->
+    <!--        android:text="ارسال" />-->
+
+</LinearLayout>

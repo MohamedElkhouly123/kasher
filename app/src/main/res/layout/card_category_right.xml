@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:paddingTop="@dimen/_5sdp"
+    android:paddingBottom="@dimen/_5sdp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/_7sdp"
+        android:layout_marginEnd="@dimen/_7sdp"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_9sdp"
+        >
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/_10sdp"
+        android:gravity="center"
+        android:layout_margin="@dimen/_1sdp"
+        android:foreground="?selectableItemBackground"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_70sdp"
+            android:layout_marginEnd="@dimen/_25sdp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/card_category_name_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:ellipsize="end"
+                android:fontFamily="@font/almarai_bold"
+
+                android:textAlignment="viewStart"
+                android:maxLines="1"
+                android:minLines="1"
+                android:text="الشاشات والصوت"
+                android:textColor="@color/app_color"
+                android:textSize="@dimen/_12ssp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:textAlignment="viewStart"
+                android:ellipsize="end"
+                android:fontFamily="@font/almarai_regular"
+                android:maxLines="2"
+                android:minLines="2"
+                android:lineSpacingMultiplier="1"
+                android:lineSpacingExtra="@dimen/_5sdp"
+                android:text="ساعات رجالي، ساعات نسائي، ساعات ذكية، نظارات شمسية"
+                android:textColor="@color/gray_707070"
+                android:textSize="@dimen/_11ssp" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="@dimen/_75sdp"
+        android:layout_height="@dimen/_75sdp"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:layout_gravity="start"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:elevation="@dimen/_8sdp">
+
+        <ImageView
+            android:id="@+id/category_name_card_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:elevation="@dimen/_3sdp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/imagee" />
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".view.fragment.MapPages.MapFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_170sdp"
+            >
+
+            <fragment
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <!--            <ImageView-->
+            <!--                android:layout_width="@dimen/_35sdp"-->
+            <!--                android:layout_height="@dimen/_35sdp"-->
+            <!--                android:elevation="@dimen/_5sdp"-->
+            <!--                android:src="@drawable/ic_fancymapsmarker_icon"-->
+            <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--                app:layout_constraintEnd_toEndOf="parent"-->
+            <!--                app:layout_constraintStart_toStartOf="parent"-->
+            <!--                app:layout_constraintTop_toTopOf="parent"-->
+            <!--               />-->
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/fragment_map_current_location_icon"
+                android:layout_width="@dimen/_58sdp"
+                android:layout_height="@dimen/_68sdp"
+                android:layout_gravity="center"
+                android:elevation="@dimen/_2sdp"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/pin_orange_black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fragment_advertisement_search_card"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                >
+                <fragment
+                    android:id="@+id/fragment_advertisement_search_Et"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+            </androidx.cardview.widget.CardView>
+
+            <AutoCompleteTextView
+                android:id="@+id/fragment_advertisement_search_Et2"
+                style="@style/EditTextsearch"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_73sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:elevation="@dimen/_3sdp"
+                android:background="@drawable/shapauto2"
+                android:drawableStart="@drawable/ic_search_icon_gray"
+                android:drawablePadding="@dimen/_8sdp"
+                android:focusableInTouchMode="true"
+                android:fontFamily="@font/almarai_regular"
+                android:gravity="start|center_vertical"
+                android:hint="@string/search_about_place_region"
+                android:textAlignment="viewStart"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:textColor="@color/gray_text_color"
+                android:textColorHint="@color/gray_999999"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="bottom|end"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="@dimen/_13sdp"
+            android:layout_marginBottom="@dimen/_24sdp"
+            android:elevation="@dimen/_50sdp"
+            >
+
+            <FrameLayout
+                android:id="@+id/change_map_type"
+                android:layout_width="@dimen/_38sdp"
+                android:layout_height="@dimen/_38sdp"
+                android:layout_marginStart="@dimen/_1sdp"
+                android:layout_marginEnd="@dimen/_1sdp"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:elevation="@dimen/_3sdp"
+                android:background="@drawable/circle_shap_love"
+                >
+
+                <ImageView
+                    android:id="@+id/change_map_type_image"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:padding="@dimen/_2sdp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/earth1" />
+
+            </FrameLayout>
+            <FrameLayout
+                android:id="@+id/add_current_location"
+                android:layout_width="@dimen/_38sdp"
+                android:layout_height="@dimen/_38sdp"
+                android:elevation="@dimen/_3sdp"
+                android:layout_marginStart="@dimen/_1sdp"
+                android:layout_marginEnd="@dimen/_1sdp"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:background="@drawable/circle_shap_love"
+                >
+
+                <ImageView
+                    android:id="@+id/add_current_location_image"
+
+                    android:layout_width="@dimen/_23sdp"
+                    android:layout_height="@dimen/_23sdp"
+                    android:layout_gravity="center"
+                    />
+
+            </FrameLayout>
+        </LinearLayout>
+        <ScrollView
+            android:id="@+id/fragment_map_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center_vertical"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:fontFamily="@font/almarai_bold"
+                    android:gravity="center_vertical"
+                    android:text="@string/title_name"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12ssp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/fragment_map_title_name_til"
+
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_13sdp"
+                    android:layout_marginEnd="@dimen/_16sdp"
+                    app:hintEnabled="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/fragment_map_title_name_etx"
+                        style="@style/EditTextLogin"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_39sdp"
+                        android:drawablePadding="@dimen/_8sdp"
+                        android:fontFamily="@font/almarai_regular"
+                        android:gravity="center|start"
+                        android:hint="@string/examole_home_work"
+                        android:inputType="text"
+                        android:padding="@dimen/_3ssp"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/black"
+                        android:textColorHint="#8E8E93"
+                        android:textSize="@dimen/_12ssp">
+
+                    </com.google.android.material.textfield.TextInputEditText>
+                </com.google.android.material.textfield.TextInputLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/_18sdp"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_18sdp"
+                    >
+                    <ProgressBar
+                        android:id="@+id/fragment_map_address_progress_loading"
+                        android:visibility="gone"
+                        android:layout_width="@dimen/_18sdp"
+                        android:layout_height="@dimen/_18sdp" />
+                    <TextView
+                        android:id="@+id/fragment_map_address_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_3sdp"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/almarai_regular"
+                        android:gravity="center|start"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10ssp"/>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/fragment_map_save_center_location_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:layout_marginEnd="@dimen/_16sdp"
+                    android:layout_marginBottom="@dimen/_22sdp"
+                    android:background="@drawable/gradient_btn_blue_shap"
+                    android:fontFamily="@font/almarai_bold"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:text="@string/save"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12ssp"
+                    app:backgroundTint="@null" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_65sdp"
+        android:background="#80000000">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:fontFamily="@font/almarai_bold"
+            android:text="@string/add_new_address"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15ssp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_horizontal"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:src="@drawable/ic_back_icon_white_one"
+            android:elevation="@dimen/_5sdp" />
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/fragment_map_load_current_location_ly"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:clickable="true"
+        android:gravity="center"
+        android:elevation="@dimen/_20sdp"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:id="@+id/fragment_map_load_current_location_wait_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_90sdp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:fontFamily="@font/almarai_regular"
+            android:text="@string/You_are_being_redirected_to_the_current_site"
+            android:textColor="@color/gray_707070"
+            android:textSize="@dimen/_14ssp"
+            />
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/_30sdp"
+            android:elevation="@dimen/_7sdp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/map_reload"
+            />
+    </FrameLayout>
+</FrameLayout>

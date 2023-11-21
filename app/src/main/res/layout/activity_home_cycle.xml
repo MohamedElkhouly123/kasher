@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".view.activity.HomeCycleActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/home_activity_layout_parent"
+        >
+        <LinearLayout
+            android:id="@+id/home_activity_fragment_normal_part"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                >
+                <fragment
+                    android:id="@+id/home_activity_fragment_normal"
+                    android:name="androidx.navigation.fragment.NavHostFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:defaultNavHost="true"
+                    app:navGraph="@navigation/normal_mobile_navigation" />
+                <include
+                    android:id="@+id/no_internet_conection"
+                    layout="@layout/no_internet_conection"/>
+                <include
+                    android:id="@+id/reload_page"
+                    layout="@layout/reload_page"/>
+
+                <androidx.coordinatorlayout.widget.CoordinatorLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/placeSnackBar"
+                    android:layout_gravity="bottom"
+                    android:layout_marginStart="@dimen/_7sdp"
+                    android:layout_marginEnd="@dimen/_7sdp"
+                    android:layout_marginBottom="@dimen/_4sdp"
+                    />
+            </FrameLayout>
+
+
+            <View
+                android:id="@+id/home_activity_view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/gradiant_navigation_shadow" />
+
+            <me.ibrahimsn.lib.SmoothBottomBar
+                android:id="@+id/nav_view"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_gravity="bottom"
+                android:visibility="gone"
+                app:backgroundColor="@color/white"
+                app:indicatorColor="@color/app_color"
+                app:textColor="@color/white"
+                android:elevation="@dimen/_5sdp"
+                app:iconMargin="@dimen/_6sdp"
+                app:itemFontFamily="@font/almarai_regular"
+                app:textSize="@dimen/_9ssp"
+                android:theme="@style/navigation_buttom_style"
+                app:menu="@menu/normal_bottom_nav_menu"
+                app:iconTint="@color/black"
+                app:duration="@android:integer/config_mediumAnimTime"
+                />
+<!--            app:indicatorRadius="@dimen/_12sdp"-->
+<!--            app:activeItem="@integer/material_motion_duration_long_2"-->
+            <!--            app:labelVisibilityMode="labeled"-->
+<!--            <me.ibrahimsn.lib.SmoothBottomBar-->
+<!--                android:id="@+id/bottomBar"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="70dp"-->
+<!--                app:menu=""-->
+<!--                app:backgroundColor=""-->
+<!--                app:indicatorColor=""-->
+<!--                app:indicatorRadius=""-->
+<!--                app:cornerRadius=""-->
+<!--                app:corners=""-->
+<!--                app:sideMargins=""-->
+<!--                app:itemPadding=""-->
+<!--                app:textColor=""-->
+<!--                app:itemFontFamily=""-->
+<!--                app:textSize=""-->
+<!--                app:iconSize=""-->
+<!--                app:iconTint=""-->
+<!--                app:iconTintActive=""-->
+<!--                app:activeItem=""-->
+<!--                app:duration="" />-->
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

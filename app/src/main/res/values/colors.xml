@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#2A4B7C</color>
+    <color name="purple_700">#2A4B7C</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#292929</color>
+    <color name="black_blur">#DB000000</color>
+    <color name="black_202020">#202020</color>
+
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#D63031</color>
+    <color name="success">#118A17</color>  //#4CAF50    #32BEA6   #35F43C
+    <color name="error">#B01420</color>  //#F44336   #E04F5F
+    <color name="gray_text_color">#252525</color>
+    <color name="pink">#D81357</color>
+    <color name="green">#32BEA6</color>
+    <color name="cancel_red">#E04F5F</color>
+    <color name="gray2">#808080</color>
+    <color name="gray">#ECEBEB</color>
+    <color name="gray_light">#80ECEBEB</color>
+    <color name="delete_red">#B2152A</color>
+    <color name="delete_red_light">#0DB2152A</color>
+    <color name="red_E33838">#E33838</color>
+    <color name="gray_8E8E93">#8E8E93</color>
+    <color name="app_color">#FF6B01</color>
+    <color name="app_second_color_sky">#FBE3D2</color>
+    <color name="app_third_color">#FF6B01</color>
+    <!--    main app color  -->
+    //main blue=>    #5666ED       dark gray=> #3C4452    fayrozy=> #0C9DA5    green=>  #1FAC9E    dark yello=>  #A58E41
+    <!--    second app color  -->
+    //main blue=>    #D5D9FA       dark gray=> #D5DDED    fayrozy=> #D4EBED    green=>  #DFF0EF    dark yello=>  #EDE9DC
+    <!--    main app color  -->
+    //second blue => #317ECE       brown=>     #8F5F43    pink=>    #A71250    orange=> #FF6B01    black=>       #000000
+    <!--    second app color  -->
+    //second blue => #DAE6F3       brown=>     #E9E1DC    pink=>    #F3E2EA    orange=> #FBE3D2    black=>       #F6F1D8
+    <!--    third app color  -->
+    //yello with black =>        #DEC227
+    <color name="dark_screen1">#f6f6f6</color>
+    <color name="green_black">#39484C</color>
+    <color name="app_green">#80d261</color>
+    <color name="black_gray">#A6A6A6</color>
+    <color name="red2">#D63031</color>
+    <color name="yellow">#ffcd33</color>
+    <color name="card_item_color">#FADAAB</color>
+    <color name="card_item_color2">#18707070</color>
+    <color name="card_item_home_color2">#01000000</color>
+    <color name="gray_image">#19F44336</color>
+    <color name="blue_header">#125BA2</color>
+    <color name="blue_redios_image">#61ABED</color>
+    <color name="green_header">#80C92C</color>
+    <color name="card_item_color_my_booking">#EFFBF4</color>
+    <color name="white_home">#FFFFFF</color>
+    <color name="hint_999999">#999999</color>
+    <color name="gray_AEAEAE">#AEAEAE</color>
+    <color name="black_292929">#292929</color>
+    <color name="black_595959">#595959</color>
+    <color name="blue_FED700">#FED700</color>
+    <color name="gray_707070">#707070</color>
+    <color name="gray_999999">#999999</color>
+    <color name="gray_E2E2E2">#E2E2E2</color>
+    <color name="gray_ABABAB">#ABABAB</color>
+    <color name="white_EBEBEB">#EBEBEB</color>
+    <color name="red_C91543">#C91543</color>
+    <color name="black_000000">#000000</color>
+    <color name="grean_199B00">#199B00</color>
+    <color name="blue_1F28BF">#1F28BF</color>
+    <color name="bink_7A2ABF">#7A2ABF</color>
+    <color name="white_20">#20ffffff</color>
+    <array name="initial_slider_values">
+        <item>1</item>
+        <item>9000</item>
+    </array>
+    <color name="brown_9A6223">#9A6223</color>
+    <color name="blue_116BAC">#116BAC</color>
+    <color name="grean_568E4C">#568E4C</color>
+    <color name="red_E55151">#E55151</color>
+    <color name="gray_text2">#626262</color>
+    <color name="red_A22A36">#A22A36</color>
+    <color name="bottom_dialog_color">#A1000000</color>
+    <color name="hint_D3D3D3">#D3D3D3</color>
+    <color name="gray75">#BFFFFFFF</color>
+    <color name="grey_E6E6E6">#E6E6E6</color>
+    <color name="grey_B3E6E6E6">#B3E6E6E6</color>
+    <color name="yolley_F0F0F0">#F0F0F0</color>
+
+
+</resources>

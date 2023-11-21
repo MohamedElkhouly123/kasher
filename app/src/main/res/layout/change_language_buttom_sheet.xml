@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="@dimen/_200sdp"
+    android:background="@color/bottom_dialog_color"
+    app:cardElevation="@dimen/_60sdp"
+    android:gravity="bottom"
+    android:id="@+id/cancel_bottom_sheet_layout"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/white_radius_shape"
+        android:orientation="vertical">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:layout_width="@dimen/_62sdp"
+                android:layout_height="@dimen/_3sdp"
+                android:background="@drawable/gradient_btn_gray_white_shape2"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"
+                />
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/app_second_color_sky"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:id="@+id/change_language_bottom_sheet_arabic"
+                >
+            <RadioButton
+                android:id="@+id/change_language_bottom_sheet_arabic_radio_bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:background="@android:color/transparent"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_gravity="start|center_vertical"
+                android:fontFamily="@font/almarai_bold"
+                android:text="العربية"
+                android:textSize="@dimen/_13ssp" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:layout_gravity="end"
+                    >
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/color_card_fill_circle"
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/_4sdp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_marginEnd="@dimen/_4sdp"
+                        android:src="@drawable/ic_arabic_icon"
+                        android:layout_marginBottom="@dimen/_4sdp">
+
+                    </de.hdodenhof.circleimageview.CircleImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center_vertical"
+                        android:fontFamily="@font/almarai_bold"
+                        android:gravity="center_vertical"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:text="AR"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12ssp" />
+
+                </LinearLayout>
+
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:id="@+id/change_language_bottom_sheet_english"
+                >
+                <RadioButton
+                    android:id="@+id/change_language_bottom_english_radio_btu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:clickable="false"
+                    android:layout_gravity="start|center_vertical"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:fontFamily="@font/almarai_bold"
+                    android:text="English"
+                    android:textSize="@dimen/_13ssp" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:layout_gravity="end"
+                    >
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/_4sdp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_marginEnd="@dimen/_4sdp"
+                        android:src="@drawable/ic_english_icon"
+                        android:layout_marginBottom="@dimen/_4sdp">
+
+                    </de.hdodenhof.circleimageview.CircleImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center_vertical"
+                        android:fontFamily="@font/almarai_bold"
+                        android:gravity="center_vertical"
+                        android:text="EN"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12ssp" />
+
+                </LinearLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+
+</LinearLayout>

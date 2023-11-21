@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <gradient
+        android:angle="270"
+        android:startColor="@color/app_second_color_sky"
+        android:centerColor="@color/app_second_color_sky"
+        android:endColor="@color/app_second_color_sky"
+        />
+
+<!--    <padding-->
+<!--        android:top="@dimen/_6sdp"-->
+<!--        android:bottom="@dimen/_6sdp"-->
+<!--        android:right="@dimen/_5sdp"-->
+<!--        android:left="@dimen/_5sdp"/>-->
+
+    <stroke android:color="@color/app_third_color" android:width="@dimen/_1ssp"/>
+    <corners android:radius="@dimen/_8sdp"/>
+</shape>

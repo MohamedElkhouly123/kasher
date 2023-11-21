@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_2sdp"
+        android:layout_marginEnd="@dimen/_2sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        >
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/_1sdp"
+        android:gravity="center"
+        app:cardCornerRadius="@dimen/_8sdp"
+       >
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/_110sdp"
+            android:orientation="vertical"
+            android:id="@+id/linear_parent"
+            android:animateLayoutChanges="true"
+            >
+
+            <ImageView
+                android:id="@+id/card_bin_store_bottom_cart_delete_btn"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="end"
+                android:elevation="@dimen/_5sdp"
+                android:layout_margin="@dimen/_8sdp"
+                android:visibility="gone"
+                android:src="@drawable/close_red"
+                android:foreground="?selectableItemBackground"
+
+                />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_8sdp"
+
+            >
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginStart="@dimen/_8sdp"
+                app:cardCornerRadius="@dimen/_8sdp"
+                app:cardElevation="@dimen/_1sdp"
+
+                >
+
+                <ImageView
+                    android:id="@+id/card_bin_store_image_product"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:elevation="@dimen/_3sdp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/devise" />
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                >
+
+                <TextView
+                    android:id="@+id/bin_card_name_product_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxWidth="@dimen/_200sdp"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/almarai_bold"
+                    android:maxLines="2"
+                    android:text="ساعة يد جالاكسي 4 مقاس 40 مم وردي/ذهبي"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12ssp" />
+
+                <LinearLayout
+                    android:id="@+id/bin_card_one_price_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/card_bin_store_price_of_one_product"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|start"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/almarai_regular"
+                        android:gravity="start"
+                        android:maxWidth="@dimen/_50sdp"
+                        android:maxLines="1"
+                        android:text="1000"
+                        android:textColor="@color/gray_707070"
+                        android:textSize="@dimen/_10ssp" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center_vertical"
+                        android:layout_marginStart="@dimen/_4sdp"
+                        android:fontFamily="@font/almarai_regular"
+                        android:gravity="center_vertical"
+                        android:text="@string/Reial"
+                        android:textColor="@color/gray_707070"
+                        android:textSize="@dimen/_10sdp" />
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_dtails"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_16sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:text="sdfds;fjsdakjflsadk;lksa;kdasjdkla;skd;laskdkas;kda;skdaskasl;kd;laskd;lakalskd;laskdaksdka;skd;aksdaksdkaskdaksdkaalsdaskdkakdakdaksdaksdkaskdaskdasa;lskdl;aksdlkaskdas;kdaskldkpojkl;hlk;kp;jlkjlkjajskdjsaksajdklasdjas"
+                android:textSize="@dimen/_13sdp"
+                android:visibility="gone"
+                />
+            <LinearLayout
+                android:id="@+id/favourite_card_price_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|bottom"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/card_bin_store_price_of_total_products"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|start"
+                    android:fontFamily="@font/almarai_bold"
+                    android:gravity="start"
+                    android:minWidth="@dimen/_80sdp"
+                    android:maxWidth="@dimen/_120sdp"
+                    android:maxLines="1"
+                    android:text="125.000"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13ssp" />
+
+<!--                <TextView-->
+
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="start|center_vertical"-->
+<!--                    android:layout_marginStart="@dimen/_4sdp"-->
+<!--                    android:fontFamily="@font/almarai_bold"-->
+<!--                    android:gravity="center_vertical"-->
+<!--                    android:text="@string/Reial"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="@dimen/_13sdp" />-->
+            </LinearLayout>
+            <TextView
+                android:id="@+id/favourite_card_no_price_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:ellipsize="end"
+                android:fontFamily="@font/almarai_bold"
+                android:maxWidth="@dimen/_168sdp"
+                android:maxLines="1"
+                android:text="@string/no_price"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13ssp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:layout_gravity="bottom|end"
+                android:gravity="end"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/card_bin_store_decrease_number_product"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:visibility="gone"
+                    android:layout_gravity="bottom|right"
+                    android:background="@drawable/circle_shap_remove"
+                    android:elevation="@dimen/_50sdp"
+                    android:padding="@dimen/_5sdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="@dimen/_9sdp"
+                        >
+                        <ImageView
+                            android:id="@+id/cart_bin_decrease_number_img"
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            android:layout_gravity="center"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_minus_icon" />
+                    </FrameLayout>
+
+                </FrameLayout>
+                <ImageView
+                    android:id="@+id/cart_bin_decrease_number_delete_img"
+                    android:layout_width="@dimen/_18sdp"
+                    android:layout_height="@dimen/_18sdp"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    android:src="@drawable/delete" />
+                <TextView
+                    android:id="@+id/card_bin_store_number_of_product"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="@dimen/_35sdp"
+                    android:layout_gravity="center_vertical|center"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/almarai_bold"
+                    android:gravity="center"
+                    android:maxWidth="@dimen/_80sdp"
+                    android:maxLines="1"
+                    android:text="1"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13ssp" />
+
+
+                <FrameLayout
+                    android:id="@+id/card_bin_store_increase_number_product"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:visibility="gone"
+                    android:layout_gravity="bottom|right"
+                    android:background="@drawable/circle_shap_add"
+                    android:elevation="@dimen/_50sdp"
+                    android:padding="@dimen/_5sdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <ImageView
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_gravity="center"
+
+                        android:src="@drawable/ic_plus_icon_add"
+                        app:tint="@color/white" />
+
+                </FrameLayout>
+            </LinearLayout>
+        </FrameLayout>
+
+    </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+    <com.google.android.material.appbar.CollapsingToolbarLayout
+        android:id="@+id/collapsing_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:contentScrim="@color/app_color"
+        app:layout_scrollFlags="scroll|exitUntilCollapsed"
+       >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_collapseMode="parallax"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_270sdp"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:src="@drawable/sign_pic" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            android:paddingTop="@dimen/_80sdp">
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_85sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/almarai_bold"
+                    android:text="@string/wellcome"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_18sdp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/almarai_regular"
+                    android:text="@string/We_miss_you"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15sdp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_collapseMode="pin"
+            android:paddingTop="@dimen/_30sdp"
+            android:paddingBottom="@dimen/_15sdp"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Dark">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginEnd="@dimen/_16sdp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/almarai_bold"
+                android:text="@string/login"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15sdp" />
+
+            <ImageView
+                android:id="@+id/back_btu"
+
+                android:layout_width="@dimen/_27sdp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center"
+
+                android:src="@drawable/ic_back_icon_white_one"
+                android:elevation="@dimen/_5sdp"
+
+                app:tint="@color/white" />
+        </FrameLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:layoutDirection="rtl"
+                >
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    >
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/fragment_login_phone_number_or_email_til"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:boxCornerRadiusBottomEnd="@dimen/_8sdp"
+                        app:boxCornerRadiusTopEnd="@dimen/_8sdp"
+                        app:boxCornerRadiusBottomStart="@dimen/_8sdp"
+                        app:boxCornerRadiusTopStart="@dimen/_8sdp">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/fragment_login_phone_number_et"
+                            style="@style/edit_text_grey_text_light11"
+                            android:hint="@string/email_or_phone"
+                            android:inputType="textAutoComplete"
+
+                            android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@._-"
+                        />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <TextView
+                        android:id="@+id/fragmentm_enter_phone_number_code_tv"
+                        style="@style/black_style_light_12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_14sdp"
+                        android:layout_gravity="end"
+                        android:visibility="gone"
+                        android:layout_marginEnd="@dimen/_12sdp"
+                        android:layout_marginStart="@dimen/_12sdp"
+                        android:textColor="@color/black_292929"
+                        android:text="+966"
+                        />
+                </FrameLayout>
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7"
+                    android:visibility="gone"
+                    >
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/fragment_login_filter_select_region_til"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:boxCornerRadiusBottomEnd="@dimen/_8sdp"
+                        app:boxCornerRadiusTopEnd="@dimen/_8sdp"
+                        app:boxCornerRadiusBottomStart="@dimen/_8sdp"
+                        app:boxCornerRadiusTopStart="@dimen/_8sdp">
+                        <AutoCompleteTextView
+                            android:id="@+id/fragmentm_login_code_select_auto_complete"
+                            style="@style/auto_complete_grey_text_light11"
+                            android:paddingStart="@dimen/_10sdp"
+                            android:drawableEnd="@drawable/ic_arrow_down_24_gray"
+                            />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <!--                    <com.hbb20.CountryCodePicker-->
+                    <!--                        android:id="@+id/countyCodePicker"-->
+                    <!--                        android:layout_width="match_parent"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        app:ccp_autoDetectLanguage="true"-->
+                    <!--                        app:ccp_showArrow="false"-->
+                    <!--                        app:ccp_showFlag="false"-->
+                    <!--                        android:visibility="invisible"-->
+                    <!--                        app:ccp_showNameCode="false"-->
+                    <!--                        android:layout_gravity="center_vertical|start"-->
+                    <!--                        />-->
+                    <ImageView
+                        android:id="@+id/fragmentm_login_select_auto_complete_country_img"
+                        android:layout_width="@dimen/_37sdp"
+                        android:layout_height="@dimen/_23sdp"
+                        android:src="@drawable/saudi_arabia_1"
+                        android:layout_marginTop="@dimen/_13sdp"
+                        android:layout_marginStart="@dimen/_12sdp"
+                        android:layout_gravity="start"
+                        />
+                </FrameLayout>
+            </LinearLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/fragment_login_password_til"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TextInputLayoutAutoStyle"
+                app:passwordToggleDrawable="@drawable/show_password_selector"
+                app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/fragment_login_password_et"
+                    style="@style/edit_text_grey_text_light11"
+                    android:hint="@string/Password"
+                    android:inputType="textPassword"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <CheckBox
+                android:id="@+id/fragment_login_remember_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|start|center_vertical"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/almarai_regular"
+                android:text="@string/rememberme"
+                android:checked="true"
+                android:visibility="gone"
+                android:textAlignment="gravity"
+                android:textColor="#8E8E93"
+                android:textSize="@dimen/_12ssp"
+
+                />
+
+
+            <TextView
+                android:id="@+id/fragment_login_forget_pass_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|end|center_vertical"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:fontFamily="@font/almarai_bold"
+                android:text="@string/forget_password"
+                android:textColor="@color/app_color"
+                android:textSize="@dimen/_11ssp" />
+
+            <Button
+                android:id="@+id/fragment_login_login_btu"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_50sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:background="@drawable/gradient_btn_blue_shap"
+                android:fontFamily="@font/almarai_bold"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:text="@string/login"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12ssp"
+                app:backgroundTint="@null" />
+            <TextView
+                android:id="@+id/fragment_login_coninue_with_google_btn"
+                android:layout_marginTop="@dimen/_18sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:text="@string/contineo_with_google"
+                android:drawableStart="@drawable/search_google"
+                android:paddingStart="@dimen/_15sdp"
+                android:paddingEnd="@dimen/_43sdp"
+                android:textAlignment="center"
+                style="@style/buttom_style3"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_18sdp"
+                android:layout_marginBottom="@dimen/_50sdp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/almarai_regular"
+                    android:text="@string/Dont_have_an_account"
+                    android:textColor="@color/gray_707070"
+                    android:textSize="@dimen/_12ssp" />
+
+                <TextView
+                    android:id="@+id/fragment_login_sigin_et"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_4sdp"
+                    android:fontFamily="@font/almarai_bold"
+                    android:text="@string/create_new_account"
+                    android:textColor="@color/app_color"
+                    android:textSize="@dimen/_12ssp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>

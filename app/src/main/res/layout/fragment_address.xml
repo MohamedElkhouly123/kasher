@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <TextView
+            android:id="@+id/fragment_add_address_main_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/almarai_bold"
+            android:text="@string/addresses"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15sdp" />
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="@dimen/_27sdp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_1sdp"
+            android:layout_gravity="start|center_vertical"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:src="@drawable/ic_back_icon"
+            android:elevation="@dimen/_5sdp"
+            />
+
+
+    </FrameLayout>
+
+    <ImageView
+        style="@style/view_style2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:padding="1dp" />
+
+<!--    <androidx.core.widget.NestedScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:scrollbars="none"-->
+<!--        android:fillViewport="true">-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/fragment_address_saved_addresses_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical"
+                android:fontFamily="@font/almarai_bold"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginStart="@dimen/_13sdp"
+                android:layout_marginEnd="@dimen/_13sdp"
+                android:text="@string/saved_address"
+                android:textColor="@color/black"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:textSize="@dimen/_15ssp" />
+        <LinearLayout
+            android:id="@+id/fragment_address_cards_rv_ly"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="6"
+            android:visibility="visible"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/fragment_address_cards_rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+
+                <include
+                    android:id="@+id/item_load_more"
+                    layout="@layout/item_load_more"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true" />
+
+
+                <include
+                    android:id="@+id/not_found_result_error"
+
+                    layout="@layout/not_found_result_error" />
+
+            </RelativeLayout>
+        </LinearLayout>
+<!--            <com.google.android.material.appbar.AppBarLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@color/white"-->
+<!--                >-->
+            <com.google.android.material.appbar.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:elevation="@dimen/_5sdp"
+                >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:elevation="@dimen/_5sdp"
+                >
+                <ImageView
+                    android:id="@+id/fragment_address_cards_shadow_img"
+                    style="@style/view_style2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:padding="1dp" />
+            <TextView
+                android:id="@+id/fragment_address_cards_add_title_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical"
+                android:fontFamily="@font/almarai_regular"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:visibility="gone"
+                android:text="@string/add_address_title"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp" />
+            <LinearLayout
+                android:id="@+id/fragment_add_address_btu"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@drawable/no_background_buttom"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:gravity="center|center_vertical"
+                android:layout_marginTop="@dimen/_13sdp"
+                android:orientation="horizontal"
+                >
+                <FrameLayout
+                    android:id="@+id/card_bin_store_increase_number_product"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/circle_shap_add"
+                    android:elevation="@dimen/_50sdp"
+                    android:padding="@dimen/_5sdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+                    <ImageView
+                        android:layout_width="@dimen/_14sdp"
+                        android:layout_height="@dimen/_14sdp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_plus_icon_add"
+                        app:tint="@color/white" />
+
+                </FrameLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/app_color"
+                    android:text="@string/add_new_address"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/_12ssp"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:fontFamily="@font/almarai_bold"
+                    />
+
+            </LinearLayout>
+            <ImageView
+                style="@style/view_style2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginTop="@dimen/_13sdp"
+                android:padding="1dp" />
+        </LinearLayout>
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <!--            </com.google.android.material.appbar.AppBarLayout>-->
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                app:cardCornerRadius="@dimen/_8sdp"-->
+<!--                android:layout_marginTop="@dimen/_12sdp"-->
+<!--                android:layout_marginStart="@dimen/_12sdp"-->
+<!--                android:layout_marginEnd="@dimen/_12sdp"-->
+<!--                app:cardElevation="@dimen/_2sdp"-->
+<!--                android:foreground="?selectableItemBackground"-->
+<!--                android:gravity="center">-->
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:orientation="horizontal"-->
+
+<!--                    android:paddingTop="@dimen/_12sdp"-->
+<!--                    android:layout_gravity="center"-->
+
+<!--                    >-->
+
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:orientation="vertical"-->
+<!--                        android:gravity="center_vertical"-->
+
+<!--                        >-->
+<!--                        <TextView-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:ellipsize="end"-->
+
+<!--                            android:layout_marginEnd="@dimen/_12sdp"-->
+<!--                            android:layout_marginStart="@dimen/_12sdp"-->
+<!--                            android:fontFamily="@font/almarai_bold"-->
+<!--                            android:gravity="center_vertical"-->
+<!--                            android:maxLines="2"-->
+<!--                            android:text="العمل"-->
+<!--                            android:textColor="@color/black"-->
+<!--                            android:textSize="@dimen/_13ssp"  />-->
+<!--                        <TextView-->
+
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="start|center_vertical"-->
+
+<!--                            android:fontFamily="@font/almarai_bold"-->
+<!--                            android:gravity="center_vertical"-->
+<!--                            android:text="هذا النص هو مثال لنص يمكن أن يستبدل"-->
+<!--                            android:layout_marginTop="@dimen/_4sdp"-->
+<!--                            android:layout_marginStart="@dimen/_12sdp"-->
+<!--                            android:layout_marginEnd="@dimen/_12sdp"-->
+<!--                            android:textColor="@color/gray_707070"-->
+<!--                            android:textSize="@dimen/_11sdp" />-->
+
+
+
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:orientation="horizontal"-->
+<!--                            android:layout_marginTop="@dimen/_16sdp"-->
+<!--                            android:layout_marginStart="@dimen/_6sdp"-->
+<!--                            android:layout_marginEnd="@dimen/_6sdp"-->
+<!--                            android:gravity="end"-->
+<!--                            android:layout_marginBottom="@dimen/_16sdp"-->
+<!--                            >-->
+
+
+
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_gravity="center_vertical|center"-->
+
+<!--                                android:layout_marginEnd="@dimen/_12sdp"-->
+<!--                                android:ellipsize="end"-->
+<!--                                android:fontFamily="@font/almarai_bold"-->
+<!--                                android:gravity="start"-->
+<!--                                android:maxWidth="@dimen/_50sdp"-->
+<!--                                android:maxLines="1"-->
+<!--                                android:text="تعديل"-->
+<!--                                android:textColor="@color/app_color"-->
+<!--                                android:textSize="@dimen/_12ssp" />-->
+<!--                            <TextView-->
+
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_gravity="center_vertical|center"-->
+<!--                                android:layout_marginStart="@dimen/_6sdp"-->
+<!--                                android:layout_marginEnd="@dimen/_6sdp"-->
+<!--                                android:ellipsize="end"-->
+<!--                                android:fontFamily="@font/almarai_bold"-->
+<!--                                android:gravity="start"-->
+<!--                                android:maxWidth="@dimen/_50sdp"-->
+<!--                                android:maxLines="1"-->
+<!--                                android:text="حذف"-->
+<!--                                android:textColor="@color/app_color"-->
+<!--                                android:textSize="@dimen/_12ssp" />-->
+
+
+
+<!--                        </LinearLayout>-->
+
+<!--                    </LinearLayout>-->
+<!--                </LinearLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+        </LinearLayout>
+
+<!--    </androidx.core.widget.NestedScrollView>-->
+
+</LinearLayout>

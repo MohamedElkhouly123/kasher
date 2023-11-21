@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/almarai_bold"
+            android:text="@string/add_rate"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15sdp" />
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="@dimen/_27sdp"
+            android:layout_height="@dimen/_27sdp"
+            android:layout_gravity="start|center"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:background="@drawable/ic_baseline_close_24"
+            />
+
+    </FrameLayout>
+
+<!--    <ImageView-->
+<!--        style="@style/view_style2"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="@dimen/_1sdp"-->
+<!--        android:layout_marginTop="@dimen/_4sdp"-->
+<!--        android:padding="1dp" />-->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_175sdp"
+        android:layout_gravity="center"
+
+        android:layout_marginTop="@dimen/_18sdp"
+        android:layout_marginBottom="@dimen/_18sdp"
+        android:src="@drawable/ic_rate_pic"
+        />
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:orientation="vertical"
+
+
+            >
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+
+                android:orientation="horizontal">
+
+
+                <RatingBar
+                    android:id="@+id/fragment_add_rate_rating_bar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:numStars="5"
+                    android:rating="3"
+                    android:scaleX=".78"
+                    android:scaleY=".78"
+                    android:theme="@style/rating"
+
+                    />
+            </FrameLayout>
+
+
+            <!--                <com.google.android.material.textfield.TextInputEditText-->
+
+            <!--                    android:id="@+id/fragment_contact_us_directly_mobile"-->
+            <!--                    style="@style/EditTextLogin"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="@dimen/_40sdp"-->
+            <!--                    android:layout_marginTop="@dimen/_5sdp"-->
+            <!--                    android:layout_marginBottom="@dimen/_10sdp"-->
+            <!--                    android:background="@drawable/shape_edit_text_border"-->
+            <!--                    android:ems="10"-->
+            <!--                    android:hint="@string/First_Name_and_Last_Name"></com.google.android.material.textfield.TextInputEditText>-->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/fragment_add_rate_message_til"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                app:boxCornerRadiusBottomEnd="@dimen/_8sdp"
+                app:boxCornerRadiusTopEnd="@dimen/_8sdp"
+                app:boxCornerRadiusBottomStart="@dimen/_8sdp"
+                app:boxCornerRadiusTopStart="@dimen/_8sdp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/fragment_add_rate_message_et"
+                    style="@style/EditTextLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_110sdp"
+                    android:hint="@string/rate_message"
+                    android:gravity="top|start"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:textAlignment="viewStart"
+                    android:ems="10"
+                    android:scrollbars="vertical"
+                    android:inputType="textMultiLine"
+                    android:textSize="@dimen/_12sdp">
+
+            </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button
+                android:id="@+id/fragment_add_rate_Reviews_bt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_45sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:background="@drawable/gradient_btn_blue_shap"
+                android:fontFamily="@font/almarai_bold"
+                android:gravity="center"
+                android:text="@string/add_rate"
+
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

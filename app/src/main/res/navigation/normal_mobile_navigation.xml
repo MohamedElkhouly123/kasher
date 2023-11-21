@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/normal_mobile_navigation"
+    app:startDestination="@id/splashPageFragment">
+
+
+    <fragment
+        android:id="@+id/homeFragment2"
+        android:name="com.example.ecommerceapp.view.fragment.HomeCycle.HomeFragment"
+        android:label="fragment_home"
+
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment2_to_addressFragment"
+            app:destination="@id/addressFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/enter_from_right"
+            app:popExitAnim="@anim/exit_to_left"
+     />
+    </fragment>
+    <fragment
+        android:id="@+id/categoryFragment"
+        android:name="com.example.ecommerceapp.view.fragment.HomeCycle.CategoryFragment"
+        android:label="fragment_category"
+        tools:layout="@layout/fragment_category" />
+    <fragment
+        android:id="@+id/favouriteFragment"
+        android:name="com.example.ecommerceapp.view.fragment.HomeCycle.FavouriteFragment"
+        android:label="fragment_favourite"
+        tools:layout="@layout/fragment_favourite" />
+    <fragment
+        android:id="@+id/moreFragment"
+        android:name="com.example.ecommerceapp.view.fragment.HomeCycle.MoreFragment"
+        android:label="fragment_more"
+        tools:layout="@layout/fragment_more" >
+        <action
+            android:id="@+id/action_moreFragment_to_termsAndCondationFragment"
+            app:destination="@id/termsAndCondationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/subCategoryFragment"
+        android:name="com.example.ecommerceapp.view.fragment.subPages.SubCategoryFragment"
+        android:label="fragment_sub_category"
+        tools:layout="@layout/fragment_sub_category" />
+    <fragment
+        android:id="@+id/usersRatesFragment"
+        android:name="com.example.ecommerceapp.view.fragment.subPages.UsersRatesFragment"
+        android:label="fragment_users_rates"
+        tools:layout="@layout/fragment_users_rates" />
+    <fragment
+        android:id="@+id/addressFragment"
+        android:name="com.example.ecommerceapp.view.fragment.subPages.AddressFragment"
+        android:label="fragment_address"
+        app:enterAnim="@anim/slide_in_up"
+        app:exitAnim="@anim/slide_out_down"
+        tools:layout="@layout/fragment_address" >
+        <action
+            android:id="@+id/action_addressFragment_to_homeFragment2"
+            app:destination="@id/homeFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/binFragment"
+        android:name="com.example.ecommerceapp.view.fragment.subPages.BinFragment"
+        android:label="fragment_bin"
+        tools:layout="@layout/fragment_bin" />
+    <fragment
+        android:id="@+id/completeOrderFragment"
+        android:name="com.example.ecommerceapp.view.fragment.subPages.CompleteOrderFragment"
+        android:label="fragment_complete"
+        tools:layout="@layout/fragment_complete" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.ecommerceapp.view.fragment.userCycle.LoginFragment"
+        android:label="fragment_contact_us"
+        tools:layout="@layout/fragment_contact_us" />
+    <fragment
+        android:id="@+id/RegisterFragment"
+        android:name="com.example.ecommerceapp.view.fragment.userCycle.RegisterFragment"
+        android:label="fragment_resister"
+        tools:layout="@layout/fragment_register" />
+    <fragment
+        android:id="@+id/ordersFragment"
+        android:name="com.example.ecommerceapp.view.fragment.subPages.OrdersFragment"
+        android:label="fragment_orders2"
+        tools:layout="@layout/fragment_orders2" />
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.example.ecommerceapp.view.fragment.subPages.EditProfileFragment"
+        android:label="EditProfileFragment"
+        tools:layout="@layout/fragment_edit_profile"
+        />
+    <fragment
+        android:id="@+id/changePasswordFragment"
+        android:name="com.example.ecommerceapp.view.fragment.userCycle.ChangePasswordFragment"
+        android:label="ChangePasswordFragment"
+        tools:layout="@layout/fragment_change_password"/>
+    <fragment
+        android:id="@+id/contactUsFragment"
+        android:name="com.example.ecommerceapp.view.fragment.appInfo.ContactUsFragment"
+        android:label="ContactUsFragment"
+        tools:layout="@layout/fragment_contact_us"/>
+    <fragment
+        android:id="@+id/forgetPasswordFragment"
+        android:name="com.example.ecommerceapp.view.fragment.userCycle.ForgetPasswordFragment"
+        android:label="ForgetPasswordFragment"
+        tools:layout="@layout/fragment_forget_password"/>
+    <fragment
+        android:id="@+id/privacyFragment"
+        android:name="com.example.ecommerceapp.view.fragment.appInfo.PrivacyFragment"
+        android:label="PrivacyFragment"
+        tools:layout="@layout/fragment_privicy"/>
+    <fragment
+        android:id="@+id/rateFragment"
+        android:name="com.example.ecommerceapp.view.fragment.appInfo.RateFragment"
+        android:label="RateFragment"
+        tools:layout="@layout/fragment_rate"/>
+    <fragment
+        android:id="@+id/termsAndCondationFragment"
+        android:name="com.example.ecommerceapp.view.fragment.appInfo.TermsAndCondationFragment"
+        android:label="TermsAndCondationFragment"
+        tools:layout="@layout/fragment_terms_andcondition">
+        <action
+            android:id="@+id/action_termsAndCondationFragment_to_moreFragment"
+            app:destination="@id/moreFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/orderInfoFragment"
+        android:name="com.example.ecommerceapp.view.fragment.subPages.OrderInfoFragment"
+        android:label="OrderInfoFragment"
+        tools:layout="@layout/fragment_orders_details"/>
+    <fragment
+        android:id="@+id/productDetailsFragment"
+        tools:layout="@layout/fragment_product_details"
+        android:name="com.example.ecommerceapp.view.fragment.subPages.ProductDetailsFragment"
+        android:label="ProductDetailsFragment" />
+    <fragment
+        android:id="@+id/usersRateFragment"
+        android:name="com.example.ecommerceapp.view.fragment.subPages.UsersRateFragment"
+        android:label="UsersRateFragment"
+    tools:layout="@layout/fragment_users_rates"
+
+    />
+    <fragment
+        android:id="@+id/classifyProductFragment"
+        android:name="com.example.ecommerceapp.view.fragment.subPages.ClassifyProductFragment"
+        android:label="fragment_classify_product"
+        tools:layout="@layout/fragment_classify_product" />
+    <fragment
+        android:id="@+id/searchFragmentFragment"
+        android:name="com.example.ecommerceapp.view.fragment.subPages.SearchFragment"
+        android:label="fragment_search_fragment"
+        tools:layout="@layout/fragment_search_fragment" />
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.example.ecommerceapp.view.fragment.MapPages.MapFragment"
+        android:label="fragment_map"
+        tools:layout="@layout/fragment_map" />
+    <fragment
+        android:id="@+id/confirmCodeFragment"
+        android:name="com.example.ecommerceapp.view.fragment.userCycle.ConfirmCodeFragment"
+        android:label="fragment_confirm_code"
+        tools:layout="@layout/fragment_confirm_code" />
+    <fragment
+        android:id="@+id/rentalPaidFragment"
+        android:name="com.example.ecommerceapp.view.fragment.subPages.RentalPaidFragment"
+        android:label="fragment_rental_paid"
+        tools:layout="@layout/fragment_rental_paid" />
+    <fragment
+        android:id="@+id/pertChartFragment"
+        android:name="com.example.ecommerceapp.view.fragment.subPages.PertChartFragment"
+        android:label="fragment_pert_chart"
+        tools:layout="@layout/fragment_pert_chart" />
+    <fragment
+        android:id="@+id/mapFragmentParent"
+        android:name="com.example.ecommerceapp.view.fragment.HomeCycle.MapFragmentParent"
+        android:label="MapFragmentParent" />
+    <fragment
+        android:id="@+id/mapFragmentTest"
+        android:name="com.example.ecommerceapp.view.fragment.MapPages.MapFragmentTest"
+        android:label="MapFragmentTest" />
+    <fragment
+        android:id="@+id/splashPageFragment"
+        android:name="com.example.ecommerceapp.view.fragment.appInfo.SplashPageFragment"
+        android:label="SplashPageFragment" />
+</navigation>
